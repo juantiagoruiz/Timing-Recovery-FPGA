@@ -15,7 +15,7 @@ module top_poly #(
    // COMMENT TO IMPLEMENT IN FPGA
    ////////////////////////////////////////////////////////////
   
-  /*
+  
   output signed [NB_OUTPUT-1:0] o_data,
   input [5:0] phase,
   input                        i_en, //! Enable
@@ -28,13 +28,13 @@ module top_poly #(
   ////////////////////////////////////////////////////////////
   //// UNCOMMENT TO IMPLEMENT IN FPGA
   ////////////////////////////////////////////////////////////
-   
+   /*
     wire [NB_OUTPUT -1:0]  o_data;            //! Merge data from RAM
     wire                               i_en;              //! Enable PRBS
     wire [5 : 0 ]    phase;      //! Address for Read Memory
     wire                               rst_n;               //! Reset
     wire                               rst2;               //! Reset
-  
+  */
   ////////////////////////////////////////////////////////////
 
 
@@ -352,7 +352,7 @@ end
   ////////////////////////////////////////////////////////////
   
 //// VIO Instance
- 
+ /*
  vio
   u_vio
     (
@@ -374,7 +374,8 @@ ila
       .probe4_0 (mu_index),            // Mu index value (polyphase filter index)
       .clk_0    (clk)                  // Debug clock
     );
-
+*/
 
    
 endmodule
+
